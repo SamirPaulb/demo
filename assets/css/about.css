@@ -1,0 +1,850 @@
+@import url(/assets/css/navbar.css);
+@import url(/assets/css/loader.css);
+
+.about {
+    background: var(--blue-color);
+    color: var(--font-hover) !important;
+}
+
+body,html {
+  overflow-x: hidden !important;
+}
+
+html,
+html *,
+body,
+body * {
+  cursor: none;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgba(66,133,244,1) 0%, rgba(1,166,240,1) 100%);
+  border-radius: 10px;
+} 
+
+.about_header {
+  display: grid;
+  grid-template-columns: 55% auto;
+  margin-top: 3%;
+}
+
+.circles_about {
+    position: relative;
+    height: 19vw;
+    z-index: 16;
+    top: 25%;
+    left: 25%;
+}
+
+.self {
+    position: absolute;
+    height: 17vw;
+    z-index: 18;
+    left: 18%;
+    right: 20%;
+    top: 7.5em;
+    bottom: 15%;
+}
+
+.circles_about_phone {
+  display: none;
+}
+
+.self_phone {
+  display: none;
+}
+
+.about_section {
+    font-family:'Poppins', sans-serif;
+    overflow: hidden;
+} 
+
+.aboutme {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5em;
+    margin-top: 45%;
+    bottom: 35%;
+    left: 0%;
+    color: rgb(66, 133, 244);
+  }
+  
+  .aboutme .text-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .aboutme .line {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #01A6F0;
+    transform-origin: 100% 100%;
+    bottom: 0;
+  }
+  
+  .aboutme .letter {
+    display: inline-block;
+    line-height: 0.1em;
+  }
+
+  .about_content {
+      display: grid;
+      grid-template-columns: 55% auto;
+  }
+  .hello {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 18px;
+    font-weight: 450;
+  }
+
+  .code_sy {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(66, 133, 244);
+  }
+
+  .fa-arrow-circle-right {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(66, 133, 244);
+  }
+
+  .fa-arrow-circle-down {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(66, 133, 244);
+  }
+
+  .para_aboutme {
+    padding-left: 8%;
+    padding-top: 4%;
+  }
+
+  .content {
+    position: relative;
+    left: 5%;
+  }
+
+  .tagcloud {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .tagcloud--item:hover {
+    color: #36454F;
+  }
+  .description_phone {
+    display: none;
+  }
+  .content_phone {
+    display: none;
+  }
+
+.myskills_content {
+    font-family:'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 55% auto;
+} 
+
+.myskills {
+  font-family:'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3.5em;
+  position: relative;
+  left: 6%;
+  color: rgb(52, 168, 83);
+}
+
+.myskills .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.myskills .line {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #7FBC00;
+  transform-origin: 0 50%;
+}
+
+.myskills .line1 { 
+  top: 0; 
+  left: 110%;
+}
+
+.myskills .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.para_myskills {
+  position: relative;
+  right: 4%;
+  top: 15%;
+}
+
+.description_skills {
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.fa-cloud-upload-alt {
+  color: #7FBC00;
+  font-size: 21px;
+}
+
+.myskill_links {
+  color: #7FBC00;
+  text-decoration: none;
+}
+
+/*Skill Bars*/
+
+.skill_container {
+  position: relative;
+}
+
+.skillbox {
+  position: relative;
+  width: 90%;
+  top: -15%;
+  left: 4%;
+  display: inline-block;
+}
+
+.skillbox p{
+  margin-left: 3%;
+  font-size: 24px;
+  font-weight: 500;
+}
+.container {
+  margin-left: 7%;
+  width: 80%;
+  height: 10px;
+  background-color: #747474;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+
+#fe-bar {
+  width: 0%;
+  height: 10px; 
+  border-radius: 15px;
+  background: linear-gradient(86deg, rgba(66,133,244,1) 0%, rgba(1,166,240,1) 100%);
+  animation: animateskillbar1 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animateskillbar11{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+@keyframes animateskillbar1{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 0%;
+  }
+}
+
+
+#be-bar{
+  width: 0%;
+  height: 10px; 
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(234,67,53,1) 0%, rgba(243,79,28,1) 100%);
+  animation: animateskillbar2 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animateskillbar22{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+@keyframes animateskillbar2{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 0%;
+  }
+}
+
+
+#cp-bar{
+  width: 0%;
+  height: 10px; 
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(52,168,83,1) 0%, rgba(127,188,0,1) 100%);
+  animation: animateskillbar3 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animateskillbar33{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 65%;
+    }
+  }
+  @keyframes animateskillbar3{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 0%;
+    }
+  }
+  
+
+#uiux-bar{
+  width: 0%; 
+  height: 10px; 
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(251,188,5,1) 0%, rgba(255,186,1,1) 100%);
+  animation: animateskillbar4 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animateskillbar44{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes animateskillbar4{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 0%;
+  }
+}
+
+.download_cv {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+.downloadcv_text {
+  font-family:'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  position: relative;
+  margin-top: 4%;
+}
+
+.download_btn {
+  position: relative;
+  padding-bottom: 3%;
+}
+  
+/*Download Button*/
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+  padding: 10px 25px;
+	background-color: white;
+  border-color: rgb(66, 133, 244);
+  border-style: solid;
+	color: rgb(66, 133, 244);
+  
+	font-family:'Poppins', sans-serif;
+	text-decoration: none;
+	font-size: 22px;
+  font-weight: 550;
+	text-align: center;
+	text-indent: 20px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.buttonDownload:hover {
+	background-color: rgba(1,166,240,1);
+  border-color: rgba(1,166,240,1);
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10%;
+	height: 3px;
+	border-style: solid;
+	border-width: 0 3px 3px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: white;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: white;
+	animation-play-state: running;
+}
+
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .content {
+    left: 4%;
+  }
+
+  .skill_container {
+    top: 5%;
+  }
+
+  .para_myskills {
+    top: 18%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+
+  .content {
+    left: 1%;
+  }
+
+  .skill_container {
+    top: 6%;
+  }
+  .para_myskills {
+    top: 13%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+
+  .aboutme {
+    font-size: 3.3em;
+    left: -9%;
+  }
+
+  .circles_about{
+    top: 30%;
+  }
+
+  .content {
+    display: none;
+  }
+  .content_phone {
+    display: block;
+    position: relative;
+    top: 15%;
+    left: 3%;
+  }
+
+  .tagcloud {
+    font-size: 17px;
+    font-weight: 550;
+  }
+
+  .myskills {
+    margin-top: 5%;
+    font-size: 3.3em;
+  }
+
+  .para_myskills {
+    top: 5%;
+  }
+
+  .skill_container {
+    top: 8%;
+  }
+
+  .skillbox p {
+    font-size: 22px
+  }
+
+  .container {
+    height: 8px;
+  }
+
+  #fe-bar {
+    height: 8px;
+  }
+
+  #be-bar {
+    height: 8px;
+  }
+
+  #cp-bar {
+    height: 8px;
+  }
+
+  #uiux-bar {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .aboutme {
+    font-size: 3em;
+    left: -10%;
+  }
+
+  .circles_about {
+    display: none;
+  }
+
+  .self {
+    display: none;
+  }
+
+  .circles_about_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 21vw;
+    z-index: 16;
+    top: 5%;
+    left: 25%;
+    margin-top: 10%;
+  }
+
+  .self_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 17vw;
+    z-index: 18;
+    left: 18%;
+    top: 5em;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+
+  .content_phone {
+    left: -5%;
+  }
+
+  .myskills {
+    font-size: 3em;
+  }
+  .skill_container {
+    top: 15%;
+  }
+
+  .description_skills {
+    font-size: 17px;
+  }
+
+  .download_cv {
+    margin-top: 7%;
+  }
+
+  .downloadcv_text {
+    font-size: 23px;
+  }
+
+  .download_btn {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 891px) {
+
+  .aboutme {
+    font-size: 2.7em;
+    bottom: 25%;
+    left: -13%;
+  }
+  
+  .content_phone {
+    left: -7%;
+  }
+
+  .myskills {
+    font-size: 2.7em;
+  }
+
+  .skillbox p {
+    font-size: 18px;
+  }
+
+  .skill_container {
+    top: 18%;
+  }
+
+  .buttonDownload {
+    text-indent: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  .about_header {
+    display: block;
+  }
+
+  .circles_about_phone {
+    height: 30vw;
+    margin-top: 20%;
+    left: 33%;
+  }
+
+  .self_phone {
+    height: 25vw;
+    left: 39%;
+    top: 8em;
+  }
+
+  .aboutme { 
+    font-size: 2.5em;
+    margin-top: 5%;
+    left: 30%;
+  }
+  
+  .about_content {
+    display: block;
+  }
+  
+  .description {
+    display: none;
+  }
+  .description_phone {
+    display: block;
+    font-size: 17px;
+    font-weight: 450;
+  }
+  .para_aboutme {
+    padding-left: 5%;
+  }
+
+  .content_phone {
+    left: 25%;
+  }
+
+  .myskills_content {
+    display: block;
+  }
+
+  .myskills {
+    font-size: 2.5em;
+  }
+  
+  .skill_container {
+    left: 4%;
+  }
+
+  .description_skills {
+    font-size: 17px;
+    font-weight: 450;
+  }
+
+  .para_myskills {
+    padding-left: 10%;
+  }
+
+  .downloadcv_text {
+    font-size: 22px;
+  }
+
+  .download_btn {
+    font-size: 20px;
+  }
+
+  .buttonDownload {
+    text-indent: 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .aboutme{
+    left: 25%;
+    font-size: 2.3em;
+  }
+
+  .self_phone {
+    top: 7em;
+  }
+  
+  .content_phone {
+    left: 13%;
+  }
+
+  .tagcloud {
+    font-size: 18px;
+    font-weight: 550;
+  }
+
+  .myskills {
+    font-size: 2.3em;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  .aboutme {
+    font-size: 2em;
+    left: 23%;
+  }
+  
+  .self_phone {
+    top: 5.5em;
+  }
+  
+  .content_phone {
+    left: 3%;
+  }
+
+  .tagcloud {
+    font-size: 17px;
+    font-weight: 550;
+  }
+
+  .myskills {
+    font-size: 2em;
+  }
+
+  .skillbox p {
+    font-size: 17px;
+  }
+
+  .fa-cloud-upload {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 420px) {
+
+  .aboutme {
+    font-size: 1.6em;
+    left: 25%;
+  }
+
+  .aboutme .line {
+    height: 4px;
+  }
+  
+  .hello {
+    font-size: 16px;
+  }
+
+  .description_phone {
+    font-size: 15px;
+  }
+
+  .content_phone {
+    left: -3%;
+  }
+
+  .tagcloud {
+    font-size: 15px;
+  }
+
+  .myskills {
+    margin-top: 8%;
+    font-size: 1.6em;
+  }
+
+  .description_skills {
+    font-size: 15px;
+  }
+
+  .downloadcv_text {
+    font-size: 20px;
+  }
+
+  .download_btn {
+    font-size: 18px;
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .aboutme {
+    left: 20%;
+  }
+
+  .circles_about_phone {
+    margin-top: 25%;
+  }
+
+  .self_phone {
+    top: 5.5em;
+  }
+
+  .content_phone {
+    left: -13%;
+  }
+
+  .downloadcv_text {
+    font-size: 18px;
+  }
+
+  .download_btn {
+    font-size: 16px;
+  }
+}

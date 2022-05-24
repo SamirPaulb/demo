@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206103165-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-206103165-1');
+    </script>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/cursor.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/assets/js/TagCloud.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <title>About Me</title>
+</head>
+<body>
+
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+  <div id="loading"></div>   
+<div id="navbar"></div>
+
+    <div class="about_section">
+        <div data-aos="fade-right" data-aos-once="true" class="about_header">
+           <div class = "circles_photos">
+            <img class="self_phone" src="/assets/images/asmit.png">
+            <svg viewBox="0 0 455 343" fill="none" class="circles_about">
+                <circle class="layer" data-speed="-5" cx="203.5" cy="151.5" r="151.5" fill="#34A853" />
+                <circle class="layer" data-speed="-2" cx="91" cy="245" r="55" fill="#FBBC05" />
+                <circle class="layer" data-speed="2" cx="35" cy="35" r="35" fill="#4285F4" />
+                <circle class="layer" data-speed="1" cx="258" cy="323" r="20" fill="#EA4335" />
+            </svg>    
+            <img class="self layer" data-speed="7" src="/assets/images/asmit.png"> 
+            <svg viewBox="0 0 455 343" fill="none" class="circles_about_phone">
+                <circle cx="203.5" cy="151.5" r="151.5" fill="#34A853" />
+                <circle cx="91" cy="245" r="55" fill="#FBBC05" />
+                <circle cx="35" cy="35" r="35" fill="#4285F4" />
+                <circle cx="258" cy="323" r="20" fill="#EA4335" />
+            </svg>
+        </div>
+            <div data-aos="fade-left" class="aboutme">
+                <span class="text-wrapper">
+                    <span class="letters">Me, Myself and I</span>
+                    <span class="line"></span>
+                </span>
+            </div>
+        </div>
+        <div class="about_content">
+            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" class="para_aboutme">
+                <p class="hello">Hello!</p>
+                <p class="description"> I'm a B.Tech Computer Science and Business Systems student.<br> 
+                    I am a Cloud Enthusiast and a learner, 
+                    and deeply passionate <br>about Software Development & Innovations.<br>
+                    I enjoy turning complex problems into simple, beautiful and intuitive<br>designs. I also love the
+                    logic and structure of coding and always strive <br>to write elegant and efficient code <span class="code_sy"><i class="fas fa-code" aria-hidden="true"></i></span></i><br><br>
+                    When I am not coding, you'll find me lifting weights in the gym or at <br>my desk sketching stuff.
+                    <br><br>
+                    And these are the Tech I am familiar with <span><i class="fas fa-arrow-circle-right" aria-hidden="true"></i></span>
+                  </p>
+                <p class="description_phone"> I'm a B.Tech Computer Science and Business Systems student. I am a Cloud Enthusiast and a learner,
+                    and deeply passionate about<br> Software Development & Innovations.<br>
+                    I enjoy turning complex problems into simple, beautiful and intuitive designs.<br>I also love the
+                    logic and structure of coding and always strive to write elegant and efficient code <span class="code_sy"><i class="fas fa-code" aria-hidden="true"></i></span></i><br><br>
+                    When I am not coding, you'll find me lifting weights in the gym or at my desk sketching stuff.
+                    <br><br>
+                    And these are the Tech I am familiar with <span><i class="fas fa-arrow-circle-down" aria-hidden="true"></i></span>
+                </p>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="2300" data-aos-once="true" class="content"></div>
+            <div data-aos="fade-left" data-aos-duration="1100" data-aos-once="true" class="content_phone"></div>
+        </div>
+    </div>
+
+     <div class="myskills_section">
+       <div data-aos="fade-right" data-aos-once="true" class="myskills">
+           <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">My Skills</span>
+           </span>
+       </div>
+      <div class="myskills_content">
+        <div class="skill_container">
+        <div id="progressbar"></div>
+        <div class="skillbox">
+            <p data-aos="fade-right" data-aos-once="true" class="sk">Front-End</p>
+            <div class="container" data-aos="fade-right">
+                <div id="fe-bar"></div>
+            </div>
+
+            <p data-aos="fade-right" data-aos-once="true" class="sk">Back-End</p>
+            <div class="container" data-aos="fade-right">
+                <div id="be-bar"></div>
+            </div>
+
+            <p data-aos="fade-right" data-aos-once="true" class="sk">Cloud Platform</p>
+            <div class="container" data-aos="fade-right">
+                <div id="cp-bar"></div>
+            </div>
+
+            <p data-aos="fade-right" data-aos-once="true" class="sk">UI/UX</p>
+            <div class="container" data-aos="fade-right">
+                <div id="uiux-bar"></div>
+            </div>
+        </div>
+        </div>
+     <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1200" class="para_myskills">
+        <p class="description_skills">My main area of expertise currently is in front-end web development(client side of the web).<br><br>
+           I am familiar with a lot of tech tools which I use in my projects. My interests, however, extend beyond web and I love building apps,
+           taking part<br> in competitive coding competitions and contributing to open-source.<br><br>
+           I like to learn new things and I am currently exploring Cloud Computing <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i><br><br>
+           Visit my <a class="myskill_links" href="https://www.linkedin.com/in/asmit-malakannawar" target="_blank">LinkedIn</a> profile for more details or just <a class="myskill_links" href="/assets/html/contact.html">contact</a> me.
+       </p>
+     </div>
+    </div>
+</div>
+ <div data-aos="fade-right" data-aos-once="true" class="download_cv">
+    <p class="downloadcv_text">Download my Resume here</p>
+    <div class="download_btn">
+        <a href="/assets/Resume.pdf" target="_blank" class="buttonDownload" download>Download</a>
+    </div>
+ </div>
+
+ <footer>
+    <div class="footer_line">
+      <h3>Made with <i class="fas fa-heart" aria-hidden="true"></i> Asmit Malakannawar</h3>
+    </div>
+  </footer>
+
+    <script src="/assets/js/cursor.js"></script>
+    <script src="/assets/js/about.js"></script>
+</body>
+</html>
